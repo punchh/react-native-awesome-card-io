@@ -15,8 +15,7 @@ public class RNCardIOPackage implements ReactPackage {
     @Override
     public List<NativeModule> createNativeModules(ReactApplicationContext reactContext) {
         return Arrays.<NativeModule>asList(
-            new RNCardIOModule(reactContext),
-            new RNCardIOUtilities(reactContext)
+            new RNCardIOModule(reactContext)
       );
     }
 
