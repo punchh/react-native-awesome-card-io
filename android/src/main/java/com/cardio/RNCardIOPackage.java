@@ -24,8 +24,9 @@ public class RNCardIOPackage implements ReactPackage {
       return Collections.emptyList();
     }
     
-    @Override
-    public List<Class<? extends JavaScriptModule>> createJSModules() {
-        return Collections.emptyList();
-    }
+/* For RN <=47 uncomment this method */
+//     @Override
+//     public List<Class<? extends JavaScriptModule>> createJSModules() {
+//         return Collections.emptyList();
+//     }
 }
