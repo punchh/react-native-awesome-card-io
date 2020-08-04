@@ -18,7 +18,7 @@ import io.card.payment.CreditCard;
 
 public class RNCardIOModule extends ReactContextBaseJavaModule implements ActivityEventListener {
 
-  public static final int CARD_IO_SCAN = 1;
+  public static final int CARD_IO_SCAN = 7772;
 
   private Promise promise;
 
@@ -117,7 +117,7 @@ public class RNCardIOModule extends ReactContextBaseJavaModule implements Activi
       res.putString("cardholderName", scanResult.cardholderName);
       promise.resolve(res);
     } else {
-      promise.reject("user_cancelled", "The user cancelled");
+      promise.reject(new Throwable("user_cancelled"));
     }
   }
 
