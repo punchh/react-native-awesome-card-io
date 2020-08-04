@@ -118,7 +118,7 @@ public class RNCardIOModule extends ReactContextBaseJavaModule implements Activi
                 res.putString("cardholderName", scanResult.cardholderName);
                 promise.resolve(res);
             } else {
-                promise.reject(new Throwable("user_cancelled"));
+                promise.reject("user_cancelled", "The user cancelled");
             }
         }
     }
