@@ -2,11 +2,8 @@ import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import {
   requireNativeComponent,
-  NativeAppEventEmitter,
-  NativeModules,
+  NativeAppEventEmitter
 } from 'react-native'
-
-const { CardIOUtilities } = NativeModules
 
 class CardIOView extends Component {
   static propTypes = {
@@ -19,12 +16,7 @@ class CardIOView extends Component {
     scanInstructions: PropTypes.string,
     scanOverlayView: PropTypes.element,
     scanExpiry: PropTypes.bool,
-    scannedImageDuration: PropTypes.number,
-    detectionMode: PropTypes.oneOf([
-      CardIOUtilities.DETECTION_MODE.AUTOMATIC,
-      CardIOUtilities.DETECTION_MODE.IMAGE_AND_NUMBER,
-      CardIOUtilities.DETECTION_MODE.IMAGE,
-    ]),
+    scannedImageDuration: PropTypes.number
   }
 
   componentWillMount() {
