@@ -25,7 +25,7 @@
   "homepage": "https://github.com/Kerumen/react-native-awesome-card-io",
   "license": "MIT",
   "dependencies": {
-    "prop-types": "^15.6.2"
+    "prop-types": "^15.7.2"
   },
   "devDependencies": {
     "babel-eslint": "^10.0.1",
